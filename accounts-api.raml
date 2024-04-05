@@ -1,9 +1,6 @@
 #%RAML 1.0
 title: Accounts API
 
-types:
-  Account: !include exam
-
 /accounts:
   get:
     description: retrieve customer accounts
@@ -22,3 +19,4 @@ types:
         body:
           application/json:
             type: array
+            examples            
