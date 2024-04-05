@@ -7,4 +7,7 @@ title: Accounts API
     headers:
       user_id:
     queryParameters:
-      account_type
+      account_type:
+        description: filter based on personal or business account
+        type: AccountType
+        required: false
