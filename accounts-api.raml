@@ -1,6 +1,10 @@
 #%RAML 1.0
 title: Accounts API
 
+type:
+  AccountType: !include dataTypes/AccountType.raml
+  Account: !include 
+
 /accounts:
   get:
     description: retrieve customer accounts
@@ -19,6 +23,6 @@ title: Accounts API
         body:
           application/json:
             type: array
-            
+            items: Account
             examples:
               output: !include examples/Accounts.raml            
